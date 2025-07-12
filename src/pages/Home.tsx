@@ -141,7 +141,7 @@ const Home: React.FC = () => {
       <div className="text-center py-16 hero-gradient text-white rounded-2xl shadow-stackit">
         <div className="max-w-4xl mx-auto px-4">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-fade-in">
-            Welcome to StackIt
+            Welcome to FireShark
           </h1>
           <p className="text-xl md:text-2xl mb-8 text-stackit-100 animate-fade-in">
             The minimal question-and-answer platform for collaborative learning
@@ -405,7 +405,7 @@ const Home: React.FC = () => {
                   <Link to="/register" className="block">
                     <Button className="w-full justify-start btn-stackit">
                       <Users className="h-4 w-4 mr-2" />
-                      Join StackIt
+                      Join FireShark
                     </Button>
                   </Link>
                   <Link to="/login" className="block">
@@ -422,7 +422,7 @@ const Home: React.FC = () => {
           {/* Features */}
           <Card className="card-stackit animate-fade-in">
             <CardHeader>
-              <CardTitle>Why StackIt?</CardTitle>
+              <CardTitle>Why FireShark?</CardTitle>
             </CardHeader>
             <CardContent className="space-y-3">
               <div className="flex items-start gap-3">

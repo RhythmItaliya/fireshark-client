@@ -53,7 +53,7 @@ const VerifyEmail: React.FC = () => {
               <div className="text-center space-y-4">
                 <div className="bg-green-50 rounded-lg p-4 border border-green-200">
                   <h3 className="text-lg font-medium text-green-800 mb-2">
-                    🎉 Welcome to StackIt!
+                    🎉 Welcome to FireShark!
                   </h3>
                   <p className="text-green-700 text-sm">
                     Your email has been verified successfully. You now have full access to all features.

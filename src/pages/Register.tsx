@@ -88,7 +88,7 @@ const Register: React.FC = () => {
 
         <Card>
           <CardHeader>
-            <CardTitle className="text-center">Join StackIt</CardTitle>
+            <CardTitle className="text-center">Join FireShark</CardTitle>
           </CardHeader>
           <CardContent>
             <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">

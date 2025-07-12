@@ -152,9 +152,9 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
             <div className="flex items-center">
               <Link to="/" className="flex items-center space-x-3 group">
                 <div className="w-10 h-10 bg-gradient-stackit rounded-xl flex items-center justify-center shadow-stackit group-hover:shadow-stackit-hover transition-all duration-300 transform group-hover:scale-105">
-                  <span className="text-white font-bold text-lg">S</span>
+                  <span className="text-white font-bold text-lg">F</span>
                 </div>
-                <span className="text-2xl font-bold text-gradient">StackIt</span>
+                <span className="text-2xl font-bold text-gradient">FireShark</span>
               </Link>
 
               {/* Desktop Navigation */}
