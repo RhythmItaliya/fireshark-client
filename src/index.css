@@ -76,45 +76,45 @@
 }
 
 @layer components {
-  /* Custom StackIt Components */
-  .btn-stackit {
-    @apply bg-gradient-stackit hover:bg-gradient-stackit-hover text-white font-semibold py-2 px-4 rounded-lg transition-all duration-200 shadow-stackit hover:shadow-stackit-hover transform hover:scale-105;
+  /* Custom FireShark Components */
+  .btn-fireshark {
+    @apply bg-gradient-fireshark hover:bg-gradient-fireshark-hover text-white font-semibold py-2 px-4 rounded-lg transition-all duration-200 shadow-fireshark hover:shadow-fireshark-hover transform hover:scale-105;
   }
 
-  .btn-stackit-outline {
-    @apply border-2 border-stackit-500 text-stackit-600 hover:bg-stackit-500 hover:text-white font-semibold py-2 px-4 rounded-lg transition-all duration-200;
+  .btn-fireshark-outline {
+    @apply border-2 border-fireshark-500 text-fireshark-600 hover:bg-fireshark-500 hover:text-white font-semibold py-2 px-4 rounded-lg transition-all duration-200;
   }
 
-  .card-stackit {
-    @apply bg-white rounded-xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 hover:border-stackit-200;
+  .card-fireshark {
+    @apply bg-white rounded-xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 hover:border-fireshark-200;
   }
 
-  .input-stackit {
-    @apply w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-stackit-500 focus:border-stackit-500 transition-all duration-200;
+  .input-fireshark {
+    @apply w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-fireshark-500 focus:border-fireshark-500 transition-all duration-200;
   }
 
   .nav-link {
-    @apply px-4 py-2 rounded-lg text-gray-700 hover:text-stackit-600 hover:bg-stackit-50 transition-all duration-200 font-medium;
+    @apply px-4 py-2 rounded-lg text-gray-700 hover:text-fireshark-600 hover:bg-fireshark-50 transition-all duration-200 font-medium;
   }
 
   .nav-link-active {
-    @apply px-4 py-2 rounded-lg text-stackit-600 bg-stackit-50 font-medium;
+    @apply px-4 py-2 rounded-lg text-fireshark-600 bg-fireshark-50 font-medium;
   }
 
-  .tag-stackit {
-    @apply inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-stackit-100 text-stackit-700 hover:bg-stackit-200 transition-colors duration-200;
+  .tag-fireshark {
+    @apply inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-fireshark-100 text-fireshark-700 hover:bg-fireshark-200 transition-colors duration-200;
   }
 
-  .tag-stackit-selected {
-    @apply inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-stackit-500 text-white;
+  .tag-fireshark-selected {
+    @apply inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-fireshark-500 text-white;
   }
 
   .vote-button {
-    @apply p-2 rounded-lg hover:bg-stackit-50 text-gray-500 hover:text-stackit-600 transition-all duration-200;
+    @apply p-2 rounded-lg hover:bg-fireshark-50 text-gray-500 hover:text-fireshark-600 transition-all duration-200;
   }
 
   .vote-button-active {
-    @apply p-2 rounded-lg bg-stackit-100 text-stackit-600;
+    @apply p-2 rounded-lg bg-fireshark-100 text-fireshark-600;
   }
 
   .notification-badge {
@@ -122,11 +122,11 @@
   }
 
   .hero-gradient {
-    @apply bg-gradient-to-br from-stackit-500 via-stackit-600 to-stackit-700;
+    @apply bg-gradient-to-br from-fireshark-500 via-fireshark-600 to-fireshark-700;
   }
 
   .text-gradient {
-    @apply bg-gradient-to-r from-stackit-600 to-stackit-700 bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-fireshark-600 to-fireshark-700 bg-clip-text text-transparent;
   }
 
   /* Animations */
@@ -163,7 +163,7 @@
   }
 
   /* Rich text editor styling */
-  .prose-stackit {
+  .prose-fireshark {
     @apply max-w-none;
   }
 
@@ -214,11 +214,11 @@
   }
 
   .ProseMirror a {
-    @apply text-stackit-600 hover:text-stackit-700 underline;
+    @apply text-fireshark-600 hover:text-fireshark-700 underline;
   }
 
   .ProseMirror blockquote {
-    @apply border-l-4 border-stackit-300 pl-4 italic text-gray-600;
+    @apply border-l-4 border-fireshark-300 pl-4 italic text-gray-600;
   }
 
   .ProseMirror code {
@@ -229,50 +229,50 @@
     @apply bg-gray-100 p-4 rounded-lg overflow-x-auto;
   }
 
-  .prose-stackit h1 {
+  .prose-fireshark h1 {
     @apply text-2xl font-bold text-gray-900 mb-4;
   }
 
-  .prose-stackit h2 {
+  .prose-fireshark h2 {
     @apply text-xl font-semibold text-gray-900 mb-3;
   }
 
-  .prose-stackit h3 {
+  .prose-fireshark h3 {
     @apply text-lg font-medium text-gray-900 mb-2;
   }
 
-  .prose-stackit p {
+  .prose-fireshark p {
     @apply text-gray-700 mb-3;
   }
 
-  .prose-stackit ul {
+  .prose-fireshark ul {
     @apply list-disc list-inside mb-3;
   }
 
-  .prose-stackit ol {
+  .prose-fireshark ol {
     @apply list-decimal list-inside mb-3;
   }
 
-  .prose-stackit a {
-    @apply text-stackit-600 hover:text-stackit-700 underline;
+  .prose-fireshark a {
+    @apply text-fireshark-600 hover:text-fireshark-700 underline;
   }
 
-  .prose-stackit blockquote {
-    @apply border-l-4 border-stackit-300 pl-4 italic text-gray-600;
+  .prose-fireshark blockquote {
+    @apply border-l-4 border-fireshark-300 pl-4 italic text-gray-600;
   }
 
-  .prose-stackit code {
+  .prose-fireshark code {
     @apply bg-gray-100 px-2 py-1 rounded text-sm font-mono;
   }
 
-  .prose-stackit pre {
+  .prose-fireshark pre {
     @apply bg-gray-100 p-4 rounded-lg overflow-x-auto;
   }
 }
 
 /* Loading spinner */
 .loading-spinner {
-  @apply animate-spin rounded-full h-8 w-8 border-b-2 border-stackit-600;
+  @apply animate-spin rounded-full h-8 w-8 border-b-2 border-fireshark-600;
 }
 
 /* Toast styling */

@@ -151,7 +151,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
             {/* Logo and Navigation */}
             <div className="flex items-center">
               <Link to="/" className="flex items-center space-x-3 group">
-                <div className="w-10 h-10 bg-gradient-stackit rounded-xl flex items-center justify-center shadow-stackit group-hover:shadow-stackit-hover transition-all duration-300 transform group-hover:scale-105">
+                <div className="w-10 h-10 bg-gradient-fireshark rounded-xl flex items-center justify-center shadow-fireshark group-hover:shadow-fireshark-hover transition-all duration-300 transform group-hover:scale-105">
                   <span className="text-white font-bold text-lg">F</span>
                 </div>
                 <span className="text-2xl font-bold text-gradient">FireShark</span>
@@ -185,7 +185,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
                     placeholder="Search questions..."
                     value={searchQuery}
                     onChange={(e) => setSearchQuery(e.target.value)}
-                    className="pl-10 pr-4 py-2 w-full input-stackit"
+                    className="pl-10 pr-4 py-2 w-full input-fireshark"
                   />
                 </div>
               </form>
@@ -212,7 +212,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
 
                   {/* Notifications Dropdown */}
                   {isNotificationOpen && (
-                    <div className="absolute right-0 mt-2 w-80 bg-white rounded-xl shadow-xl border border-stackit-100 z-50 animate-fade-in">
+                    <div className="absolute right-0 mt-2 w-80 bg-white rounded-xl shadow-xl border border-fireshark-100 z-50 animate-fade-in">
                       <div className="p-4">
                         <div className="flex items-center justify-between mb-3">
                           <h3 className="text-sm font-medium text-gray-900">Notifications</h3>
@@ -246,7 +246,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
                               <div
                                 key={notification._id}
                                 className={`p-3 rounded-lg mb-2 cursor-pointer transition-all duration-200 ${
-                                  notification.isRead ? 'bg-gray-50 hover:bg-gray-100' : 'bg-stackit-50 hover:bg-stackit-100'
+                                  notification.isRead ? 'bg-gray-50 hover:bg-gray-100' : 'bg-fireshark-50 hover:bg-fireshark-100'
                                 }`}
                                 onClick={() => handleNotificationClick(notification)}
                               >
@@ -290,10 +290,10 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
                       <img
                         src={user.avatar}
                         alt={user.username}
-                        className="w-6 h-6 rounded-full border-2 border-stackit-200"
+                        className="w-6 h-6 rounded-full border-2 border-fireshark-200"
                       />
                     ) : (
-                      <div className="w-6 h-6 rounded-full bg-gradient-stackit flex items-center justify-center">
+                      <div className="w-6 h-6 rounded-full bg-gradient-fireshark flex items-center justify-center">
                         <span className="text-white text-xs font-bold">
                           {user?.username?.charAt(0).toUpperCase()}
                         </span>
@@ -304,12 +304,12 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
 
                   {/* User Dropdown */}
                   {isMobileMenuOpen && (
-                    <div className="absolute right-0 mt-2 w-48 bg-white rounded-xl shadow-xl border border-stackit-100 z-50 animate-fade-in">
+                    <div className="absolute right-0 mt-2 w-48 bg-white rounded-xl shadow-xl border border-fireshark-100 z-50 animate-fade-in">
                       <div className="py-1">
                         {user?.role !== 'guest' && (
                           <Link
                             to="/profile"
-                            className="flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-stackit-50 hover:text-stackit-600 transition-colors duration-200"
+                            className="flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-fireshark-50 hover:text-fireshark-600 transition-colors duration-200"
                             onClick={() => setIsMobileMenuOpen(false)}
                           >
                             <User className="h-4 w-4 mr-2" />
@@ -319,7 +319,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
                         {user?.role !== 'guest' && (
                           <Link
                             to="/settings"
-                            className="flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-stackit-50 hover:text-stackit-600 transition-colors duration-200"
+                            className="flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-fireshark-50 hover:text-fireshark-600 transition-colors duration-200"
                             onClick={() => setIsMobileMenuOpen(false)}
                           >
                             <Settings className="h-4 w-4 mr-2" />
