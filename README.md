@@ -1,6 +1,6 @@
-# React + TypeScript + Vite + Tailwind
+# FireShark
 
-This template provides a minimal setup to get React working in Vite, TypeScript, and Tailwind.
+A modern Q&A platform built with React, TypeScript, Vite, and Tailwind CSS.
 
 ## Getting Started 🚀
 

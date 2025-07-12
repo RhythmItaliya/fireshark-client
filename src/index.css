@@ -285,5 +285,5 @@
 }
 
 .toast-info {
-  @apply bg-stackit-500 text-white;
+  @apply bg-fireshark-500 text-white;
 }

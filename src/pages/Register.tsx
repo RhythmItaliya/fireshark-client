@@ -78,6 +78,11 @@ const Register: React.FC = () => {
           <h2 className="mt-6 text-3xl font-extrabold text-gray-900">
             Create your account
           </h2>
+          {/*
+          <p className="mt-2 text-sm text-gray-600">
+            After registering, you will receive a verification email. Please check your inbox and verify your email before logging in.
+          </p>
+          */}
           <p className="mt-2 text-sm text-gray-600">
             Or{' '}
             <Link to="/login" className="font-medium text-blue-600 hover:text-blue-500">

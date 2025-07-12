@@ -40,7 +40,7 @@ const RichTextEditor: React.FC<RichTextEditorProps> = ({
       Link.configure({
         openOnClick: false,
         HTMLAttributes: {
-          class: 'text-stackit-600 underline',
+          class: 'text-fireshark-600 underline',
         },
       }),
       Image.configure({
@@ -127,8 +127,8 @@ const RichTextEditor: React.FC<RichTextEditorProps> = ({
       title={title}
       className={`h-8 w-8 p-0 transition-all duration-200 ${
         isActive 
-          ? 'bg-stackit-500 text-white hover:bg-stackit-600' 
-          : 'text-gray-600 hover:text-stackit-600 hover:bg-stackit-50'
+                  ? 'bg-fireshark-500 text-white hover:bg-fireshark-600'
+        : 'text-gray-600 hover:text-fireshark-600 hover:bg-fireshark-50'
       }`}
     >
       <Icon className="h-4 w-4" />
@@ -138,7 +138,7 @@ const RichTextEditor: React.FC<RichTextEditorProps> = ({
   return (
     <div className={`rounded-xl shadow-sm ${className}`}>
       {/* Toolbar */}
-      <div className="flex items-center gap-1 p-3 border-b border-stackit-100 bg-gradient-to-r from-stackit-50 to-white rounded-t-xl">
+              <div className="flex items-center gap-1 p-3 border-b border-fireshark-100 bg-gradient-to-r from-fireshark-50 to-white rounded-t-xl">
         <ToolbarButton
           onClick={() => editor.chain().focus().toggleBold().run()}
           isActive={editor.isActive('bold')}
@@ -158,7 +158,7 @@ const RichTextEditor: React.FC<RichTextEditorProps> = ({
           title="Strikethrough"
         />
         
-        <div className="w-px h-6 bg-stackit-200 mx-1" />
+        <div className="w-px h-6 bg-fireshark-200 mx-1" />
         
         <ToolbarButton
           onClick={() => editor.chain().focus().toggleBulletList().run()}
@@ -173,7 +173,7 @@ const RichTextEditor: React.FC<RichTextEditorProps> = ({
           title="Numbered List"
         />
         
-        <div className="w-px h-6 bg-stackit-200 mx-1" />
+        <div className="w-px h-6 bg-fireshark-200 mx-1" />
         
         <ToolbarButton
           onClick={() => editor.chain().focus().setTextAlign('left').run()}
@@ -194,7 +194,7 @@ const RichTextEditor: React.FC<RichTextEditorProps> = ({
           title="Align Right"
         />
         
-        <div className="w-px h-6 bg-stackit-200 mx-1" />
+        <div className="w-px h-6 bg-fireshark-200 mx-1" />
         
         <ToolbarButton
           onClick={addLink}
@@ -229,7 +229,7 @@ const RichTextEditor: React.FC<RichTextEditorProps> = ({
       >
         <EditorContent 
           editor={editor} 
-          className="outline-none focus:outline-none flex-1 w-full h-full min-h-[200px] prose-stackit prose-sm max-w-none"
+          className="outline-none focus:outline-none flex-1 w-full h-full min-h-[200px] prose-fireshark prose-sm max-w-none"
         />
       </div>
     </div>

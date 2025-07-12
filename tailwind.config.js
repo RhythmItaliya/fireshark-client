@@ -51,8 +51,8 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        // Custom StackIt theme colors
-        stackit: {
+            // Custom FireShark theme colors
+    fireshark: {
           50: '#f0f4ff',
           100: '#e0e9ff',
           200: '#c7d6ff',
@@ -102,12 +102,12 @@ export default {
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-        'gradient-stackit': 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
-        'gradient-stackit-hover': 'linear-gradient(135deg, #5a6fd8 0%, #6a4190 100%)',
+              'gradient-fireshark': 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+      'gradient-fireshark-hover': 'linear-gradient(135deg, #5a6fd8 0%, #6a4190 100%)',
       },
       boxShadow: {
-        'stackit': '0 4px 14px 0 rgba(107, 99, 255, 0.25)',
-        'stackit-hover': '0 6px 20px 0 rgba(107, 99, 255, 0.35)',
+              'fireshark': '0 4px 14px 0 rgba(107, 99, 255, 0.25)',
+      'fireshark-hover': '0 6px 20px 0 rgba(107, 99, 255, 0.35)',
       },
     },
   },

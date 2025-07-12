@@ -109,8 +109,8 @@ const Home: React.FC = () => {
       title: 'Questions Asked',
       value: statsLoading ? '...' : statsData?.totalQuestions?.toLocaleString() || '0',
       icon: MessageSquare,
-      color: 'text-stackit-600',
-      bgColor: 'bg-stackit-100',
+      color: 'text-fireshark-600',
+      bgColor: 'bg-fireshark-100',
     },
     {
       title: 'Active Users',
@@ -138,31 +138,26 @@ const Home: React.FC = () => {
   return (
     <div className="space-y-8 animate-fade-in">
       {/* Hero Section */}
-      <div className="text-center py-16 hero-gradient text-white rounded-2xl shadow-stackit">
+              <div className="text-center py-16 hero-gradient text-white rounded-2xl shadow-fireshark">
         <div className="max-w-4xl mx-auto px-4">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-fade-in">
             Welcome to FireShark
           </h1>
-          <p className="text-xl md:text-2xl mb-8 text-stackit-100 animate-fade-in">
+          <p className="text-xl md:text-2xl mb-8 text-fireshark-100 animate-fade-in">
             The minimal question-and-answer platform for collaborative learning
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in">
             {isAuthenticated ? (
               <Link to="/ask">
-                <Button size="lg" className="bg-white text-stackit-600 hover:bg-gray-100 shadow-stackit hover:shadow-stackit-hover transform hover:scale-105 transition-all duration-200">
+                <Button size="lg" className="bg-white text-fireshark-600 hover:bg-gray-100 shadow-fireshark hover:shadow-fireshark-hover transform hover:scale-105 transition-all duration-200">
                   Ask a Question
                 </Button>
               </Link>
             ) : (
               <>
                 <Link to="/register">
-                  <Button size="lg" className="bg-white text-stackit-600 hover:bg-gray-100 shadow-stackit hover:shadow-stackit-hover transform hover:scale-105 transition-all duration-200">
+                  <Button size="lg" className="bg-white text-fireshark-600 hover:bg-gray-100 shadow-fireshark hover:shadow-fireshark-hover transform hover:scale-105 transition-all duration-200">
                     Get Started
-                  </Button>
-                </Link>
-                <Link to="/login">
-                  <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-stackit-600 shadow-stackit hover:shadow-stackit-hover transform hover:scale-105 transition-all duration-200">
-                    Sign In
                   </Button>
                 </Link>
               </>
@@ -174,7 +169,7 @@ const Home: React.FC = () => {
       {/* Statistics */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         {stats.map((stat, index) => (
-          <Card key={index} className="card-stackit animate-fade-in" style={{ animationDelay: `${index * 0.1}s` }}>
+          <Card key={index} className="card-fireshark animate-fade-in" style={{ animationDelay: `${index * 0.1}s` }}>
             <CardContent className="pt-6">
               <div className={`inline-flex p-3 rounded-full mb-4 ${stat.bgColor} ${stat.color}`}>
                 <stat.icon className="h-6 w-6" />
@@ -216,13 +211,13 @@ const Home: React.FC = () => {
               </div>
             ) : (
               recentQuestions.map((question: any, index: number) => (
-                <Card key={question._id} className="card-stackit animate-fade-in" style={{ animationDelay: `${index * 0.1}s` }}>
+                <Card key={question._id} className="card-fireshark animate-fade-in" style={{ animationDelay: `${index * 0.1}s` }}>
                   <CardContent className="p-6">
                     <div className="flex items-start justify-between">
                       <div className="flex-1">
                         <Link 
                           to={`/questions/${question._id}`}
-                          className="text-lg font-semibold text-gray-900 hover:text-stackit-600 transition-colors duration-200"
+                          className="text-lg font-semibold text-gray-900 hover:text-fireshark-600 transition-colors duration-200"
                         >
                           {question.title}
                         </Link>
@@ -244,7 +239,7 @@ const Home: React.FC = () => {
                           {question.tags?.map((tag: string) => (
                             <span
                               key={tag}
-                              className="tag-stackit"
+                              className="tag-fireshark"
                             >
                               <Tag className="h-3 w-3 mr-1" />
                               {tag}
@@ -349,10 +344,10 @@ const Home: React.FC = () => {
         {/* Sidebar */}
         <div className="space-y-6">
           {/* Popular Tags */}
-          <Card className="card-stackit animate-fade-in">
+          <Card className="card-fireshark animate-fade-in">
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
-                <Tag className="h-5 w-5 text-stackit-600" />
+                <Tag className="h-5 w-5 text-fireshark-600" />
                 Popular Tags
               </CardTitle>
             </CardHeader>
@@ -369,7 +364,7 @@ const Home: React.FC = () => {
                     <Link
                       key={tag._id}
                       to={`/questions?tag=${tag.name}`}
-                      className="tag-stackit hover:tag-stackit-selected"
+                      className="tag-fireshark hover:tag-fireshark-selected"
                     >
                       {tag.name}
                     </Link>
@@ -380,7 +375,7 @@ const Home: React.FC = () => {
           </Card>
 
           {/* Quick Actions */}
-          <Card className="card-stackit animate-fade-in">
+          <Card className="card-fireshark animate-fade-in">
             <CardHeader>
               <CardTitle>Quick Actions</CardTitle>
             </CardHeader>
@@ -388,13 +383,13 @@ const Home: React.FC = () => {
               {isAuthenticated ? (
                 <>
                   <Link to="/ask" className="block">
-                    <Button className="w-full justify-start btn-stackit">
+                    <Button className="w-full justify-start btn-fireshark">
                       <MessageSquare className="h-4 w-4 mr-2" />
                       Ask a Question
                     </Button>
                   </Link>
                   <Link to="/questions" className="block">
-                    <Button variant="outline" className="w-full justify-start btn-stackit-outline">
+                    <Button variant="outline" className="w-full justify-start btn-fireshark-outline">
                       <ArrowRight className="h-4 w-4 mr-2" />
                       Browse Questions
                     </Button>
@@ -403,13 +398,13 @@ const Home: React.FC = () => {
               ) : (
                 <>
                   <Link to="/register" className="block">
-                    <Button className="w-full justify-start btn-stackit">
+                    <Button className="w-full justify-start btn-fireshark">
                       <Users className="h-4 w-4 mr-2" />
                       Join FireShark
                     </Button>
                   </Link>
                   <Link to="/login" className="block">
-                    <Button variant="outline" className="w-full justify-start btn-stackit-outline">
+                    <Button variant="outline" className="w-full justify-start btn-fireshark-outline">
                       <ArrowRight className="h-4 w-4 mr-2" />
                       Sign In
                     </Button>
@@ -420,7 +415,7 @@ const Home: React.FC = () => {
           </Card>
 
           {/* Features */}
-          <Card className="card-stackit animate-fade-in">
+          <Card className="card-fireshark animate-fade-in">
             <CardHeader>
               <CardTitle>Why FireShark?</CardTitle>
             </CardHeader>
@@ -433,7 +428,7 @@ const Home: React.FC = () => {
                 </div>
               </div>
               <div className="flex items-start gap-3">
-                <Users className="h-5 w-5 text-stackit-600 mt-0.5" />
+                <Users className="h-5 w-5 text-fireshark-600 mt-0.5" />
                 <div>
                   <h4 className="font-medium">Community Driven</h4>
                   <p className="text-sm text-gray-600">Learn from and help others in the community</p>

@@ -32,7 +32,7 @@ class ErrorBoundary extends Component<Props, State> {
   public render() {
     if (this.state.hasError) {
       return (
-        <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-50 to-stackit-50">
+        <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-50 to-fireshark-50">
           <div className="max-w-md mx-auto text-center p-8">
             <div className="mb-6">
               <AlertTriangle className="h-16 w-16 text-red-500 mx-auto mb-4" />
@@ -43,7 +43,7 @@ class ErrorBoundary extends Component<Props, State> {
             </div>
             
             <div className="space-y-4">
-              <Button onClick={this.handleRetry} className="btn-stackit">
+              <Button onClick={this.handleRetry} className="btn-fireshark">
                 <RefreshCw className="h-4 w-4 mr-2" />
                 Try Again
               </Button>
@@ -51,7 +51,7 @@ class ErrorBoundary extends Component<Props, State> {
               <Button 
                 variant="outline" 
                 onClick={() => window.location.reload()}
-                className="btn-stackit-outline"
+                className="btn-fireshark-outline"
               >
                 Refresh Page
               </Button>

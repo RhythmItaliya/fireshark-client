@@ -36,7 +36,7 @@ function App() {
       <QueryClientProvider client={queryClient}>
         <AuthProvider>
           <Router>
-            <div className="min-h-screen bg-gradient-to-br from-gray-50 to-stackit-50">
+            <div className="min-h-screen bg-gradient-to-br from-gray-50 to-fireshark-50">
               <Layout>
                 <Routes>
                   <Route path="/" element={<Home />} />
